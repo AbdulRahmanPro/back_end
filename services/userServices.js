@@ -75,7 +75,6 @@ const Access_User = async(req, res) => {
         return res.status(401).json({ message: "A strange problem has occurred", power: false });
     }
 };
-
 const updateSessionStatus = async (req, res) => {
     const { profile_id, token } = req.body;
     try {

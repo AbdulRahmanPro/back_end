@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .error-message {
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oops! There was an error.</h1>
+    <% if (error.status) { %>
+        <p class="error-status"><strong>Status Code:</strong> <%= error.status %></p>
+    <% } %>
+    <div class="error-message">
+        <strong>Error Message:</strong> <%= error.message %>
+    </div>
+    <p>Please try again later or contact support if the problem persists.</p>
+</body>
+</html>
